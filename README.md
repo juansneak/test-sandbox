@@ -119,3 +119,76 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
+# Solution Instructions
+
+## Main Technologies
+
+PHP + Laravel
+ReactJS
+NPM
+Composer
+Mysql
+
+## Run the Backend API
+
+### Create Database
+
+1. mysql -h 127.0.0.1 -P 3306 -u root -p (password is 'tiger')
+2. CREATE DATABASE mend;
+3. GRANT ALL on mend.* to 'root'@'localhost';
+5. quit;
+
+### Install dependencies
+
+1. Go to www/backend_api
+2. run composer install
+
+### Run Migrations
+
+1. run php artisan migrate
+
+### Run artisan server
+
+1. run php artisan serve
+2. Backend api should be running in http://127.0.0.1:8000
+
+## Run Frontend App
+
+1. Go to www/frontend/mend_app
+2. run npm install
+3. run npm start
+
+## Endpoints
+
+**List all tasks**
+GET http://127.0.0.1:8000/api/v1/task/
+
+**Create new task**
+POST http://127.0.0.1:8000/api/v1/task/
+Body:
+{
+	"title": "This is the title of the new task",
+	"description": "Description goes here"
+}
+
+**Edit task**
+PUT http://127.0.0.1:8000/api/v1/task/{id}
+Body:
+{
+	"title": "This is the new title",
+	"description": "New description goes here"
+}
+
+**Delete an existing task**
+DELETE http://127.0.0.1:8000/api/v1/task/{id}
+
+
+## Tests
+
+### Backend API tests
+
+go to www/backend_api and type 'vendor/phpunit/phpunit/phpunit'
+
+### Frontend Unit tests
+
+go to www/frontend/mend_app and run 'npm test' 
