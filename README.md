@@ -123,10 +123,10 @@ mysql>
 
 ## Main Technologies
 
-PHP + Laravel
-ReactJS
-NPM
-Composer
+PHP + Laravel \
+ReactJS \
+NPM \
+Composer \
 Mysql
 
 ## Run the Backend API
@@ -160,26 +160,26 @@ Mysql
 
 ## Endpoints
 
-**List all tasks**
+**List all tasks**\
 GET http://127.0.0.1:8000/api/v1/task/
 
-**Create new task**
-POST http://127.0.0.1:8000/api/v1/task/
+**Create new task**\
+POST http://127.0.0.1:8000/api/v1/task/ \
 Body:
 {
 	"title": "This is the title of the new task",
 	"description": "Description goes here"
 }
 
-**Edit task**
-PUT http://127.0.0.1:8000/api/v1/task/{id}
+**Edit task**\
+PUT http://127.0.0.1:8000/api/v1/task/{id} \
 Body:
 {
 	"title": "This is the new title",
 	"description": "New description goes here"
 }
 
-**Delete an existing task**
+**Delete an existing task**\
 DELETE http://127.0.0.1:8000/api/v1/task/{id}
 
 
