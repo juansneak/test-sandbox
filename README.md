@@ -129,7 +129,7 @@ NPM \
 Composer \
 Mysql
 
-## Run the Backend API
+## Run the Backend REST API
 
 ### Create Database
 
@@ -140,7 +140,7 @@ Mysql
 
 ### Install dependencies
 
-1. Go to www/backend_api
+1. Go to www/rest_api
 2. run composer install
 
 ### Run Migrations
@@ -150,7 +150,7 @@ Mysql
 ### Run artisan server
 
 1. run php artisan serve
-2. Backend api should be running in http://127.0.0.1:8000
+2. Backend REST api should be running in http://127.0.0.1:8000
 
 ## Run Frontend App
 
@@ -185,9 +185,9 @@ DELETE http://127.0.0.1:8000/api/v1/task/{id}
 
 ## Tests
 
-### Backend API tests
+### Backend REST API tests
 
-go to www/backend_api and type 'vendor/phpunit/phpunit/phpunit'
+go to www/rest_api and type 'vendor/phpunit/phpunit/phpunit'
 
 ### Frontend Unit tests
 
