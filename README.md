@@ -140,7 +140,7 @@ Mysql
 
 ### Install dependencies
 
-1. Go to www/rest_api
+1. Go to www/backend_api
 2. run composer install
 
 ### Run Migrations
@@ -187,7 +187,7 @@ DELETE http://127.0.0.1:8000/api/v1/task/{id}
 
 ### Backend REST API tests
 
-go to www/rest_api and type 'vendor/phpunit/phpunit/phpunit'
+go to www/backend_api and type 'vendor/phpunit/phpunit/phpunit'
 
 ### Frontend Unit tests
 
